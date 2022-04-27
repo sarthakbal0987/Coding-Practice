@@ -110,8 +110,5 @@ public class FindPeakElement {
         return flag;
     }
 }
-/*
-! Call the below method to know the exact number of peak element present in the given array
-! and what are those.
-*/
+
 

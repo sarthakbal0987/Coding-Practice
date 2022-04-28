@@ -18,5 +18,6 @@ public class StringReverse {
         for (int i = 0; i < n; i++) {
             System.out.print(reverseString[i]);
         }
+        scn.close();
     }
 }

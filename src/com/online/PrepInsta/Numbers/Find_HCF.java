@@ -14,24 +14,25 @@ public class Find_HCF {
         }
         int small = nums[0];
         for (int i = 0; i < nums.length; i++) {
-            if(nums[i]<small)
+            if (nums[i] < small)
                 small = nums[i];
         }
         int hcf = 1;
         for (int i = 1; i <= small; i++) {
             int count = 0;
             for (int j = 0; j < nums.length; j++) {
-                if(nums[j] % i ==0){
+                if (nums[j] % i == 0) {
                     count++;
-                }
-                else if(nums[j] % i!= 0) break;
-                if (count == nums.length){
-                    if(hcf < i)
+                } else if (nums[j] % i != 0)
+                    break;
+                if (count == nums.length) {
+                    if (hcf < i)
                         hcf = i;
                 }
             }
         }
-        System.out.print("The HCF is "+hcf);
+        System.out.print("The HCF is " + hcf);
+        scn.close();
     }
 
 }

@@ -9,12 +9,12 @@ public class Count_Vowel {
         String word = scn.nextLine().toLowerCase().trim();
         int count = 0;
         for (int i = 0; i < word.length(); i++) {
-            if (word.charAt(i) == 'a' ||word.charAt(i) == 'e' ||word.charAt(i) == 'i' ||
-                    word.charAt(i) == 'o' ||word.charAt(i) == 'u')
-            {
+            if (word.charAt(i) == 'a' || word.charAt(i) == 'e' || word.charAt(i) == 'i' ||
+                    word.charAt(i) == 'o' || word.charAt(i) == 'u') {
                 count++;
             }
         }
-        System.out.print("Total number of vowel in "+ word+" is "+count);
+        System.out.print("Total number of vowel in " + word + " is " + count);
+        scn.close();
     }
 }

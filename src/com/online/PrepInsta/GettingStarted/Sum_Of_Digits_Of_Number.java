@@ -14,16 +14,16 @@ public class Sum_Of_Digits_Of_Number {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter a number:");
-        int number = input.nextInt();//Taking number from the user
-        int sum = 0;//Initializing sum with zero
-        while(number != 0)//While loop will continue until number is 0
+        int number = input.nextInt();// Taking number from the user
+        int sum = 0;// Initializing sum with zero
+        while (number != 0)// While loop will continue until number is 0
         {
-           int rem = number % 10;//In each iteration remainder(digit) of the number will store in rem
-            sum = sum + rem; //In each iteration sum value will be updated
-            number = number/10; //After each iteration number will shorten by 1 digit
+            int rem = number % 10;// In each iteration remainder(digit) of the number will store in rem
+            sum = sum + rem; // In each iteration sum value will be updated
+            number = number / 10; // After each iteration number will shorten by 1 digit
         }
-        System.out.println("Sum of the digits is: "+sum);//Printing the value of sum
-
+        System.out.println("Sum of the digits is: " + sum);// Printing the value of sum
+        input.close();
     }
 
 }

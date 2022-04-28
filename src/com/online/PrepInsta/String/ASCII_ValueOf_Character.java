@@ -8,5 +8,6 @@ public class ASCII_ValueOf_Character {
         System.out.println("Enter a character");
         char ch = scn.next().charAt(0);
         System.out.println("The ASCII value of " + ch + " is : " + (int) ch);
+        scn.close();
     }
 }

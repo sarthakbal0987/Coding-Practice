@@ -9,15 +9,15 @@ public class Perfect_Number {
         int num = scn.nextInt();
         int sum = 0;
         int temp = num;
-        for(int i = 1; i<num;i++){
-            if(num % i ==0)
-                sum = sum+i;
+        for (int i = 1; i < num; i++) {
+            if (num % i == 0)
+                sum = sum + i;
         }
-        if(temp == sum){
+        if (temp == sum) {
             System.out.println("This is a perfect number");
-        }
-        else {
+        } else {
             System.out.println("This is not a perfect number");
         }
+        scn.close();
     }
 }

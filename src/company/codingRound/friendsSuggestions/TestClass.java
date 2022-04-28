@@ -1,6 +1,7 @@
 package company.codingRound.friendsSuggestions;
 
 import java.util.Scanner;
+
 /*
 * Date:13-03-2022
 * Question Given by Rahul's Friend(Coding Round)
@@ -42,22 +43,23 @@ import java.util.Scanner;
 public class TestClass {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
-        int n = scn.nextInt(); //Taking size of the array
-        int[] arr = new int[n]; //Declaring array
-        for (int i = 0; i < arr.length; i++) //Checking i is smaller than array size or not
-            arr[i] = scn.nextInt(); //Taking elements of the array
+        int n = scn.nextInt(); // Taking size of the array
+        int[] arr = new int[n]; // Declaring array
+        for (int i = 0; i < arr.length; i++) // Checking i is smaller than array size or not
+            arr[i] = scn.nextInt(); // Taking elements of the array
 
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i]%2 ==0) //Checking the number is even
-                //Printing the even numbers with print() method because we don't want
+            if (arr[i] % 2 == 0) // Checking the number is even
+                // Printing the even numbers with print() method because we don't want
                 // new line after printing even numbers
-                System.out.print(arr[i]+" ");
+                System.out.print(arr[i] + " ");
         }
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i]%2 !=0)//Checking the number is odd
-                //Same thing as above but here odd number will be print
-                System.out.print(arr[i]+" ");
+            if (arr[i] % 2 != 0)// Checking the number is odd
+                // Same thing as above but here odd number will be print
+                System.out.print(arr[i] + " ");
         }
+        scn.close();
 
     }
 }

@@ -9,10 +9,12 @@ public class RemoveSpace_FromString {
         String str = scn.nextLine();
         String result = "";
         for (int i = 0; i < str.length(); i++) {
-            if (str.charAt(i) == 32);
-            else result = result + str.charAt(i);
+            if (str.charAt(i) == 32)
+                ;
+            else
+                result = result + str.charAt(i);
         }
-        System.out.print("Result is :"+ result);
-
+        System.out.print("Result is :" + result);
+        scn.close();
     }
 }

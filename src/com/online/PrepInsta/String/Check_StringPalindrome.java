@@ -10,11 +10,13 @@ public class Check_StringPalindrome {
         char[] str1 = str.toCharArray();
         if (str.equals(reverseString(str1))) {
             System.out.print("This String is a palindrome string");
-        }
-        else System.out.print("This String is not a palindrome String");
+        } else
+            System.out.print("This String is not a palindrome String");
+        scan.close();
 
     }
-    public static  String reverseString(char[] str){
+
+    public static String reverseString(char[] str) {
         char[] revString = new char[str.length];
         int size = str.length;
         for (char c : str) {

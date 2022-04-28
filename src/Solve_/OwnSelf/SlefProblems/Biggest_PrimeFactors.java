@@ -8,18 +8,17 @@ public class Biggest_PrimeFactors {
         System.out.println("Enter a number");
         int number = scn.nextInt();
         int biggestPrimeFactor = 1;
-        System.out.print("Factors of "+number+" are: ");
-        for (int i = 1; i <=number ; i++) {
-            if (number % i ==0)
-            {
-                System.out.print(i+" ");
+        System.out.print("Factors of " + number + " are: ");
+        for (int i = 1; i <= number; i++) {
+            if (number % i == 0) {
+                System.out.print(i + " ");
                 int count = 0;
                 for (int j = 1; j <= i; j++) {
-                    if(i % j ==0)
+                    if (i % j == 0)
                         count++;
                 }
-                if(count == 2) {
-                    if(i > biggestPrimeFactor)
+                if (count == 2) {
+                    if (i > biggestPrimeFactor)
                         biggestPrimeFactor = i;
                 }
 
@@ -27,7 +26,7 @@ public class Biggest_PrimeFactors {
 
         }
         System.out.println();
-        System.out.print("The biggest Prime factor of "+number+" is "+biggestPrimeFactor);
-
+        System.out.print("The biggest Prime factor of " + number + " is " + biggestPrimeFactor);
+        scn.close();
     }
 }
